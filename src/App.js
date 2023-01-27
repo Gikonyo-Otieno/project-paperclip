@@ -2,9 +2,9 @@ import React from 'react';
 // import Navbar from './components/Navbar'
 import './App.css';
 import Home from './routes/Home';
-import About from './routes/About';
-import Project from './routes/Project';
-import Contact from './routes/Contact';
+import Airline from './routes/Airline';
+import Movies from './routes/Movies';
+import Signup from './routes/Signup';
 import {Route, Routes} from 'react-router-dom'
 
 
@@ -14,9 +14,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element = {<Home />} />
-        <Route path="/project" element = {<Project />} />
-        <Route path="/about" element = {<About />} />
-        <Route path="/contact" element = {<Contact />} />
+        <Route path="/movies" element = {<Movies />} />
+        <Route path="/airline" element = {<Airline />} />
+        <Route path="/signup" element = {<Signup />} />
       </Routes>
     </>
   );
