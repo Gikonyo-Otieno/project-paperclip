@@ -1,35 +1,16 @@
 
 import React from 'react';
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import Heroimg2 from '../components/Heroimg2';
 
 function Signup() {
     return(
-      <div className="form">
-          <div className="form-body">
-              <div className="username">
-                  <label className="form__label" for="firstName">First Name </label>
-                  <input className="form__input" type="text" id="firstName" placeholder="First Name"/>
-              </div>
-              <div className="lastname">
-                  <label className="form__label" for="lastName">Last Name </label>
-                  <input  type="text" name="" id="lastName"  className="form__input"placeholder="LastName"/>
-              </div>
-              <div className="email">
-                  <label className="form__label" for="email">Email </label>
-                  <input  type="email" id="email" className="form__input" placeholder="Email"/>
-              </div>
-              <div className="password">
-                  <label className="form__label" for="password">Password </label>
-                  <input className="form__input" type="password"  id="password" placeholder="Password"/>
-              </div>
-              <div className="confirm-password">
-                  <label className="form__label" for="confirmPassword">Confirm Password </label>
-                  <input className="form__input" type="password" id="confirmPassword" placeholder="Confirm Password"/>
-              </div>
-          </div>
-          <div class="footer">
-              <button type="submit" class="btn">Sign up</button>
-          </div>
-      </div>      
-    )       
+        <div>
+            <Navbar />
+            <Heroimg2 heading="SIGN UP" text="Register for an Account to Enjoy Special Features"/>
+            <Footer />
+        </div>
+    )
 }
 export default Signup;
