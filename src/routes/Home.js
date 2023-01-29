@@ -6,17 +6,17 @@ import Card from '../components/Footer'
 
 
 
-function Data (){
-    const [Data, setData] = useState([]);
+// function Data (){
+//     const [Data, setData] = useState([]);
 
-    useEffect(() => {
-      fetch("http://localhost:3000/eventData")
-        .then((response) => response.json())
-        .then((data) => {
-          setData(data);
-        });
-    }, []);
-}
+//     useEffect(() => {
+//       fetch("http://localhost:3000/eventData")
+//         .then((response) => response.json())
+//         .then((data) => {
+//           setData(data);
+//         });
+//     }, []);
+// }
 
 
 const Home = () => {
