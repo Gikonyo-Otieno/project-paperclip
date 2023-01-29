@@ -6,7 +6,7 @@ const Movies = () => {
   return (
     <div>
       <Navbar />
-      <Heroimg2 />
+      <Heroimg2 heading = "MOVIES" text="Get tickets to the Latest Movies"/>
       <Footer />
     </div>
   )
