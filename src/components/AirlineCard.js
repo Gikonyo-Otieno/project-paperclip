@@ -1,9 +1,10 @@
 import './PricingCardStyles.css'
 import {Link} from "react-router-dom"
 
+
 import React from 'react'
 
-const EventCard = () => {
+const AirlineCard = () => {
   return (
     <div className="card">
             <h3>Now Showing</h3>
@@ -21,17 +22,4 @@ const EventCard = () => {
   )
 }
 
-export default EventCard
-
-// <div className="card">
-// <h3>{date}</h3>
-// <span className="bar"></span>
-// <p className="btc">{name}</p>
-// <p>Reg: {price1}</p>
-// <p>VIP: {price2}</p>
-// <p>Venue: {venue}</p>
-// <p>{time}</p>
-// <Link to="/contact" className="btn">
-//   BUY NOW
-// </Link>
-// </div>
+export default AirlineCard

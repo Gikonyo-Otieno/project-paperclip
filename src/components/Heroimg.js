@@ -12,7 +12,7 @@ import {Link} from 'react-router-dom'
             </div>
             <div className="content">
                 <p>YOUR ONE STOP SHOP FOR TICKETS</p>
-                <h1>Find what you need.</h1>
+                <h1>Find Events Here</h1>
                 <div>
                     <Link to="/project" className= "btn">Movies</Link>
                     <Link to="/contact" className= "btn btn-light">Sign Up</Link>
