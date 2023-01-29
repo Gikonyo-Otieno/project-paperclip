@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Navbar from '../components/Navbar'
 import Heroimg from '../components/Heroimg'
 import Footer from '../components/Footer'
-import Card from '../components/Footer'
+import EventCard from '../components/EventCard'
 
 
 
@@ -24,7 +24,7 @@ const Home = () => {
     <div>
         <Navbar />
         <Heroimg />
-        <Card />
+        <EventCard />
         <Footer />
     </div>
   )

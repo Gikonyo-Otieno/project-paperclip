@@ -53,3 +53,22 @@ const PricingCard = () => {
 }
 
 export default PricingCard
+
+
+
+
+
+
+
+// <div className="card">
+// <h3>{date}</h3>
+// <span className="bar"></span>
+// <p className="btc">{name}</p>
+// <p>Reg: {price1}</p>
+// <p>VIP: {price2}</p>
+// <p>Venue: {venue}</p>
+// <p>{time}</p>
+// <Link to="/contact" className="btn">
+//   BUY NOW
+// </Link>
+// </div>
