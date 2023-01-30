@@ -18,3 +18,8 @@ This module also serves as the landing page of the website. It contains a hero-h
 
 # Movies
 This module serves to display movie cards. It shows movies that are now showing in cinemas. Currently its data is found in the 'PricingCardData.js' component but I plan on building an API for them.
+
+
+# Airline
+This module displays available airline tickets. The  data is found in the 'AirlineCardData.js' component. However plans are in place to overhaul the component to give better functionality and ability to search for flights.
+
