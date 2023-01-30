@@ -13,3 +13,4 @@ The Application is divide into modules i.e
 4. Sell
 
 # Events
+This module also serves as the landing page of the website. It contains a hero-header as well as some event cards that are fetched from the db.json file. The event cards are displayed dynamically. They can be deleted by use of the button labeled 'X'. A posting action is performed on them in the 'Sell' module. 
