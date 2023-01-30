@@ -4,17 +4,17 @@ import {Link} from "react-router-dom"
 
 import React from 'react'
 
-const AirlineCard = () => {
+const AirlineCard = (props) => {
   return (
     <div className="card">
-            <h3>Now Showing</h3>
+            <h3>{props.date}</h3>
             <span className="bar"></span>
-            <p className="btc">Bullet Train</p>
-            <p>$ 65</p>
-            <p>Early -11:00-13:30</p>
-            <p>Afternoon -14:00-16:30</p>
-            <p>Evening -18:00-20:30</p>
-            <p>Late -21:30-00:00</p>
+            <p className="btc">{props.destination}</p>
+            <p>{props.from}</p>
+            <p>{props.price}</p>
+            <p>{props.departure}</p>
+            <p>{props.arrival}</p>
+            <p>{props.type}</p>
             <Link to="/contact" className="btn">
             BUY NOW
             </Link>
