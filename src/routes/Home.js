@@ -3,15 +3,19 @@ import Navbar from '../components/Navbar'
 import Heroimg from '../components/Heroimg'
 import Footer from '../components/Footer'
 import EventCard from '../components/EventCard'
+import { useParams } from 'react-router-dom'
 
 
 
 const Home = () => {
     const [events, setEvents] = useState(null)
+    const {id} = useParams()
 
     const handleDelete = (id) => {
-      const newEvents = events.filter(event => event.id !== id);
-      setEvents(newEvents)
+      let copy = [...this.state.events]
+      copy.splice(id, 1)
+      this.setEvents({events:copy})
+ 
     }
     useEffect(() => {
       fetch('http://localhost:3000/eventData')
@@ -23,7 +27,7 @@ const Home = () => {
         setEvents(data)
       })
     }, [])
-    
+
   return (
     <div>
         <Navbar />

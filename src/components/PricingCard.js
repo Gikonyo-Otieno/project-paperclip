@@ -8,7 +8,7 @@ const PricingCard = () => {
   return (
     <div className="pricing">
       <div className="card-container">
-        <div className="card">
+        <div className="card"> 
           <h3>Now Showing</h3>
           <span className="bar"></span>
           <p className="btc">The Gentlemen</p>

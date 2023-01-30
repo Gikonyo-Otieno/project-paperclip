@@ -11,7 +11,7 @@ function Signup() {
     return(
         <div>
             <Navbar />
-            <Heroimg2 heading="SIGN UP" text="Register for an Account to Enjoy Special Features"/>
+            <Heroimg2 heading="Having An Event?" text="Generate Tickets Here"/>
             <Form />
             <Footer />
         </div>
