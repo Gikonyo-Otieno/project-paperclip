@@ -2,14 +2,14 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Heroimg2 from '../components/Heroimg2'
-import Airline from './components/Airline.js'
+import Airline from '../components/Airline'
 
 const AirlineTicket = () => {
-  return (
+  return (                                
     <div>
       <Navbar />
       <Heroimg2 heading="AIR TICKETS" text="Purchase Flight Tickets to any Destination in the World"/>
-      <Airline />
+      <Airline/>
       <Footer />
     </div>
   )

@@ -3,35 +3,27 @@ import {Link} from "react-router-dom"
 
 import React from 'react'
 
-const EventCard = () => {
+const EventCard = ({events, handleDelete}) => {
   return (
     <div className="card">
-            <h3>Now Showing</h3>
+        {events.map((event) => (
+          <div className="card">
+            <h3>{event.date}</h3>
             <span className="bar"></span>
-            <p className="btc">Bullet Train</p>
-            <p>$ 65</p>
-            <p>Early -11:00-13:30</p>
-            <p>Afternoon -14:00-16:30</p>
-            <p>Evening -18:00-20:30</p>
-            <p>Late -21:30-00:00</p>
+            <p className="btc">{event.name}</p>
+            <p>{event.venue}</p>
+            <p>{event.time}</p>
+            <p>Reg:{event.price1}</p>
+            <p>VIP:{event.price2}</p>
+            <button className="delete" onClick={() => handleDelete(event.id)}>X</button>
             <Link to="/contact" className="btn">
-            BUY NOW
+                BUY NOW
             </Link>
+          </div>
+
+        ))}
     </div>
   )
 }
 
 export default EventCard
-
-// <div className="card">
-// <h3>{date}</h3>
-// <span className="bar"></span>
-// <p className="btc">{name}</p>
-// <p>Reg: {price1}</p>
-// <p>VIP: {price2}</p>
-// <p>Venue: {venue}</p>
-// <p>{time}</p>
-// <Link to="/contact" className="btn">
-//   BUY NOW
-// </Link>
-// </div>
