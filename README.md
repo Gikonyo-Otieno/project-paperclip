@@ -23,3 +23,6 @@ This module serves to display movie cards. It shows movies that are now showing 
 # Airline
 This module displays available airline tickets. The  data is found in the 'AirlineCardData.js' component. However plans are in place to overhaul the component to give better functionality and ability to search for flights.
 
+# Sell
+This module displays a form that is used to collect information on new events. The information is then compiled and posted to the API and in turn displayed as a new card in the events module (homepage) 
+
